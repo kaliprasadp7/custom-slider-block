@@ -1,0 +1,51 @@
+.custom-slider-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+    border: 1px solid red;
+}
+
+/* Slider Container */
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+/* Slide Item */
+.slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Slide Images */
+.slide img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Slide Texts */
+.slide .wp-block-paragraph {
+    margin-top: 10px;
+}
+
+/* Active Slide */
+.active {
+    transform: translateX(0%);
+}
+
+/* Next Slide */
+.next {
+    transform: translateX(-100%);
+}
+
+/* Previous Slide */
+.prev {
+    transform: translateX(100%);
+}
